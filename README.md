@@ -8,6 +8,17 @@ Grepp, Inc.는 개발자들의 경쟁력 강화를 위한 교육, 교류, 문제
 
 ## 목차
 
+  - [0. Abstract](#0-abstract)
+  - [1. 프로젝트 소개](#1-프로젝트-소개)
+  - [2. 소개 영상](#2-소개-영상)
+  - [3. 팀 소개](#3-팀-소개)
+  - [4. 사용법](#4-사용법)
+  - [5. 기타](#5-기타)
+  - [6. 개발](#6-개발)
+    - [협업 도구](#협업-도구)
+    - [개발 규칙](#개발-규칙)
+    - [커밋 규칙](#커밋-규칙)
+
 ## 0. Abstract
 
 Based on the data Grepp has, we design an artificial intelligence system and develops prototypes that matches personal experience and skill sets with careers.
@@ -23,13 +34,13 @@ Based on the data Grepp has, we design an artificial intelligence system and dev
 ## 3. 팀 소개
 
 - 박정재
-	- 🆔: 20150359
-	- 📧: vcz1017@kookmin.ac.kr
-	- 📁: https://github.com/3ltigr0
+  - 🆔: 20150359
+  - 📧: vcz1017@kookmin.ac.kr
+  - 📁: https://github.com/3ltigr0
 - 이호승
-	- 🆔: 20163149
-	- 📧: lhs971106@kookmin.ac.kr
-	- 📁: https://github.com/stigr
+  - 🆔: 20163149
+  - 📧: lhs971106@kookmin.ac.kr
+  - 📁: https://github.com/stigr
 
 ## 4. 사용법
 
