@@ -1,37 +1,64 @@
-## Welcome to GitHub Pages
+# 인공지능 기반 커리어 매칭 시스템 (AI based career matching system)
 
-You can use the [editor on GitHub](https://github.com/kookmin-sw/cap-template/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+**팀페이지 주소** -> https://kookmin-sw.github.io/capstone-2021-2021-25
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 산학 협력 기업: [그렙](https://www.grepp.co/)
 
-### Markdown
+Grepp, Inc.는 개발자들의 경쟁력 강화를 위한 교육, 교류, 문제 해결을 위한 모든 활동을 지원하며, 누구나 소프트웨어 개발에 참여할 수 있도록 도움을 주고 있습니다.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## 목차
 
-```markdown
-Syntax highlighted code block
+  - [0. Abstract](#0-abstract)
+  - [1. 프로젝트 소개](#1-프로젝트-소개)
+  - [2. 소개 영상](#2-소개-영상)
+  - [3. 팀 소개](#3-팀-소개)
+  - [4. 사용법](#4-사용법)
+  - [5. 기타](#5-기타)
+  - [6. 개발](#6-개발)
+    - [협업 도구](#협업-도구)
+    - [개발 규칙](#개발-규칙)
+    - [커밋 규칙](#커밋-규칙)
 
-# Header 1
-## Header 2
-### Header 3
+## 0. Abstract
 
-- Bulleted
-- List
+Based on the data Grepp has, we design an artificial intelligence system and develops prototypes that matches personal experience and skill sets with careers.
 
-1. Numbered
-2. List
+## 1. 프로젝트 소개
 
-**Bold** and _Italic_ and `Code` text
+그렙에서 운영하는 플랫폼 [프로그래머스](https://programmers.co.kr/)에는 개발자와 기업을 위한 개발자 채용 구인 구직 서비스를 제공하고 있습니다. 그러나 채용 공고의 수가 많아 개발자가 자신에게 적합한 구인 공고를 찾아 지원을 하는데에는 많은 시간과 노력이 필요합니다. 그래서 프로그래머스에서는 개인의 희망 직군과 가지고 있는 기술 스택을 포함해 경력, 학력, 활동 등을 프로필에 기록하여 자신의 프로필과 연관성이 높은 순서로 채용 공고를 조회할 수 있는 기능과 기업을 매칭해주는 기능을 제공하고 있습니다. 우리는 이 시스템이 가진 단점을 보완하고 더 많은 정보들을 반영하는 인공지능 기반 커리어 매칭 시스템을 개발하는 것이 목표입니다.
 
-[Link](url) and ![Image](src)
-```
+## 2. 소개 영상
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+추후 추가 예정
 
-### Jekyll Themes
+## 3. 팀 소개
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kookmin-sw/cap-template/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- 박정재
+  - 🆔: 20150359
+  - 📧: vcz1017@kookmin.ac.kr
+  - 📁: https://github.com/3ltigr0
+- 이호승
+  - 🆔: 20163149
+  - 📧: lhs971106@kookmin.ac.kr
+  - 📁: https://github.com/stigr
 
-### Support or Contact
+## 4. 사용법
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+추후 추가 예정
+
+## 5. 기타
+
+추후 추가 예정
+
+## 6. 개발
+
+### 협업 도구
+
+- 팀 관리: Slack
+- 버전 관리: GitHub
+- 화상 회의: Google Meet
+- 문서 작성: Google Docs
+
+### 개발 규칙
+
+### 커밋 규칙
