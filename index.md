@@ -1,6 +1,6 @@
 # 인공지능 기반 커리어 매칭 시스템 (AI based career matching system)
 
-**팀페이지 주소** -> https://kookmin-sw.github.io/capstone-2021-2021-25
+**팀페이지 주소** -> https://kookmin-sw.github.io/capstone-2021-25
 
 ## 산학 협력 기업: [그렙](https://www.grepp.co/)
 
