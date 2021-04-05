@@ -1,29 +1,64 @@
-[![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=349913&assignment_repo_type=GroupAssignmentRepo)
+# 인공지능 기반 커리어 매칭 시스템 (AI based career matching system)
 
-**팀페이지 주소** -> https://github.com/kookmin-sw/capstone-2021-25
+**팀페이지 주소** -> https://kookmin-sw.github.io/capstone-2021-25
 
+## 산학 협력 기업: [그렙](https://www.grepp.co/)
 
-### 1. 프로잭트 소개
+Grepp, Inc.는 개발자들의 경쟁력 강화를 위한 교육, 교류, 문제 해결을 위한 모든 활동을 지원하며, 누구나 소프트웨어 개발에 참여할 수 있도록 도움을 주고 있습니다.
 
-그렙이 보유하고 있는 데이터를 기반으로 개인별 스킬셋과 경험에 맞는 커리어를 매칭해 주는 인공지능 시스템을 고안하고 프로토타입을 개발한다.
+## 목차
 
-### 2. 소개 영상
+  - [0. Abstract](#0-abstract)
+  - [1. 프로젝트 소개](#1-프로젝트-소개)
+  - [2. 소개 영상](#2-소개-영상)
+  - [3. 팀 소개](#3-팀-소개)
+  - [4. 사용법](#4-사용법)
+  - [5. 기타](#5-기타)
+  - [6. 개발](#6-개발)
+    - [협업 도구](#협업-도구)
+    - [개발 규칙](#개발-규칙)
+    - [커밋 규칙](#커밋-규칙)
 
-추가 예정
+## 0. Abstract
 
-### 3. 팀 소개
+Based on the data Grepp has, we design an artificial intelligence system and develops prototypes that matches personal experience and skill sets with careers.
 
-팀을 소개하세요.
+## 1. 프로젝트 소개
 
-20163149 이호승
+그렙에서 운영하는 플랫폼 [프로그래머스](https://programmers.co.kr/)에는 개발자와 기업을 위한 개발자 채용 구인 구직 서비스를 제공하고 있습니다. 그러나 채용 공고의 수가 많아 개발자가 자신에게 적합한 구인 공고를 찾아 지원을 하는데에는 많은 시간과 노력이 필요합니다. 그래서 프로그래머스에서는 개인의 희망 직군과 가지고 있는 기술 스택을 포함해 경력, 학력, 활동 등을 프로필에 기록하여 자신의 프로필과 연관성이 높은 순서로 채용 공고를 조회할 수 있는 기능과 기업을 매칭해주는 기능을 제공하고 있습니다. 우리는 이 시스템이 가진 단점을 보완하고 더 많은 정보들을 반영하는 인공지능 기반 커리어 매칭 시스템을 개발하는 것이 목표입니다.
 
-20150359 박정재
+## 2. 소개 영상
 
-사진 추가예정
+추후 추가 예정
 
-### 4. 사용법
+## 3. 팀 소개
 
-추가예정
+- 박정재
+  - 🆔: 20150359
+  - 📧: vcz1017@kookmin.ac.kr
+  - 📁: https://github.com/3ltigr0
+- 이호승
+  - 🆔: 20163149
+  - 📧: lhs971106@kookmin.ac.kr
+  - 📁: https://github.com/stigr
 
-### 5. 기타
+## 4. 사용법
 
+추후 추가 예정
+
+## 5. 기타
+
+추후 추가 예정
+
+## 6. 개발
+
+### 협업 도구
+
+- 팀 관리: Slack
+- 버전 관리: GitHub
+- 화상 회의: Google Meet
+- 문서 작성: Google Docs
+
+### 개발 규칙
+
+### 커밋 규칙
