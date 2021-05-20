@@ -11,7 +11,9 @@ config = { 'INPUT_DIM' : 887,
            'EPOCH' : 5,
            'OPTIM' : 'adam',
            'LEARNING_RATE' : 0.001,
-           'MOMENTUM' : 0
+           'MOMENTUM' : 0,
+           'THRESHOLD' : 0.85,
+           'LINEWIDTH' : 10
 }
 
 enc = word2vecmodel.Encoder(config)
@@ -57,7 +59,8 @@ def train(model, trainloader):
 def save(path):
     torch.save(enc.state_dict(), path)
 def load(path):
-    word2vecmodel.load_state_dict(torch.load(path))
+    enc.load_state_dict(torch.load(path))
+    return enc
 
 if __name__ == "__main__":
     train_loader = preprocess.getTrainLoader(config)
