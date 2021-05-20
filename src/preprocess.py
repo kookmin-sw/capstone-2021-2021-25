@@ -1,7 +1,6 @@
 import pandas as pd
 import torch
 import numpy as np
-# <editor-fold desc="데이터">
 tag = pd.read_csv("data/tags.csv")
 job = pd.read_csv("data/job_tags.csv")
 user = pd.read_csv("data/user_tags.csv")
@@ -15,10 +14,9 @@ jobkeyword = job.merge(tag, on="tagID", how="left").drop_duplicates()
 jobkeyword = jobkeyword.groupby("jobID")["keyword"].apply(list).reset_index(name="tags")
 jobkeyword.rename(columns = {'jobID' : 'ID'}, inplace = True)
 jobkeyword['Cnt'] = jobkeyword['tags'].apply(len)
+allkeyword = userkeyword.append(jobkeyword).reset_index(drop=True)   # userid, tags 또는 jobid, tags로 구성된 데이터셋
 
-# </editor-fold>
 
-# <editor-fold desc="함수">
 def onehot(keyword):
     find = False
     onehot_vec = np.zeros(tag.shape[0])
@@ -65,6 +63,15 @@ def getJobTagList():
     taglist.sort()
     return taglist
 
+def getUserList():
+    return userkeyword
+
+def getJobList():
+    return jobkeyword
+
+def getAllList():
+    return allkeyword
+
 def getDataset():
     dataset = Word2VecDataSet(jobkeyword)
     return dataset
@@ -72,21 +79,9 @@ def getDataset():
 def getTrainLoader(config, dataset=None):
     dataset = Word2VecDataSet(jobkeyword)
     return torch.utils.data.DataLoader(dataset, batch_size=config['BATCH_SIZE'], shuffle=True), dataset
-# class dataManager():
-#     def __init__(self):
-#         self.tag = pd.read_csv("data\\tags.csv")
-#         self.job = pd.read_csv("data\\job_tags.csv")
-#         self.user = pd.read_csv("data\\user_tags.csv")
-#     def getAllTagList(self):
-#         taglist = self.tag.keyword
-#         taglist = taglist.tolist()
-#         taglist.sort()
-#         return taglist
-#     def getJobTagList(self):
-#         pass
-# </editor-fold>
+
 if __name__ == "__main__":
-    print(getAllTagList())
+    print(getJobIdList())
 
 
 
