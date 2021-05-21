@@ -2,6 +2,8 @@ import word2vecmodel
 import preprocess
 import torch
 import torch.nn as nn
+import pandas as pd
+from sklearn.metrics.pairwise import cosine_similarity
 import datetime
 config = { 'INPUT_DIM' : 887,
            'EMB_DIM'  : 50,
@@ -61,6 +63,49 @@ def save(path):
 def load(path):
     enc.load_state_dict(torch.load(path))
     return enc
+
+def get_cosim(tag1, tag2): # 두 tag의 코사인 유사도 비교
+    tag1 = tag1.reshape(1, -1)
+    tag2 = tag2.reshape(1, -1)
+
+    return cosine_similarity(tag1, tag2)[0][0]
+
+def cal_score(user_taglist, joblist, top_k): # 태그 유사도를 기반으로 채용 공고 추천
+    job_scores = []
+    jobidlist = joblist["ID"].tolist()
+
+    for jobid in jobidlist:  # job 하나
+        job_taglist = joblist[joblist['ID'] == jobid]['tags'].tolist()[0]
+        tag_scores = dict()
+
+        for job_tag in job_taglist:  # job의 tag 하나
+            if job_tag in user_taglist:
+                tag_scores[job_tag] = 1
+            else:
+                tag_scores[job_tag] = 0
+                embedded_jobtag = tagembedding(job_tag)
+
+                for user_tag in user_taglist:  # user의 tag 하나
+                    embedded_usertag = tagembedding(user_tag)
+                    cosim = get_cosim(embedded_jobtag, embedded_usertag)
+
+                    tag_scores[job_tag] = max(cosim * cosim * cosim * cosim, tag_scores[job_tag])
+
+        sum_scores = 0
+        for k, v in tag_scores.items():
+            sum_scores += v
+
+        job_scores.append(sum_scores / len(job_taglist))
+
+    job_score_pd = pd.DataFrame({'jobID': jobidlist,
+                                 'tags': joblist["tags"].tolist(),
+                                 'score': job_scores})
+
+    job_score_pd['len'] = job_score_pd['tags'].str.len()
+    job_score_pd = job_score_pd.sort_values(by=['score', 'len'], axis=0, ascending=False).drop(columns='len')
+    job_score_pd.reset_index(drop=True, inplace=True)
+
+    return job_score_pd[:top_k]
 
 if __name__ == "__main__":
     train_loader = preprocess.getTrainLoader(config)
