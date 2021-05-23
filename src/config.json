@@ -1,0 +1,13 @@
+{
+    "INPUT_DIM" : 887,
+    "EMB_DIM"  : 50,
+    "ENC_HID_DIM" : 100,
+    "DEC_HID_DIM" : 100,
+    "BATCH_SIZE" : 10,
+    "EPOCH" : 5,
+    "OPTIM" : "adam",
+    "LEARNING_RATE" : 0.001,
+    "MOMENTUM" : 0,
+    "THRESHOLD" : 0.85,
+    "LINEWIDTH" : 10
+}

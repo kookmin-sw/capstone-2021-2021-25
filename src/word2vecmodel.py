@@ -24,7 +24,7 @@ class Decoder(nn.Module):
     def __init__(self, config):
         super().__init__()
         self.inputdim = config['INPUT_DIM']
-        self.hiddendim = config['ENC_HID_DIM']
+        self.hiddendim = config['DEC_HID_DIM']
         self.embeddim = config['EMB_DIM']
 
         self.hidden = nn.Linear(self.embeddim, self.hiddendim)
