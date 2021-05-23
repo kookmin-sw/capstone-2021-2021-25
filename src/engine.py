@@ -3,18 +3,11 @@ import preprocess
 import torch
 import torch.nn as nn
 import datetime
-config = { 'INPUT_DIM' : 887,
-           'EMB_DIM'  : 50,
-           'ENC_HID_DIM' : 100,
-           'DEC_HID_DIM' : 100,
-           'BATCH_SIZE' : 10,
-           'EPOCH' : 5,
-           'OPTIM' : 'adam',
-           'LEARNING_RATE' : 0.001,
-           'MOMENTUM' : 0,
-           'THRESHOLD' : 0.85,
-           'LINEWIDTH' : 10
-}
+
+import json
+config = ''
+with open('config.json', 'r') as f:
+    config = json.load(f)
 
 enc = word2vecmodel.Encoder(config)
 dec = word2vecmodel.Decoder(config)
@@ -35,7 +28,8 @@ def use_optimizer(model, params):
                                         lr=params['LEARNING_RATE'],
                                         momentum=params['MOMENTUM'])
     return opt
-def train(model, trainloader):
+def train(trainloader):
+    model = net
     epoch = config['EPOCH']
     criterion = nn.BCELoss()
     optim = use_optimizer(model, config)
@@ -53,7 +47,7 @@ def train(model, trainloader):
             loss = criterion(predict, label)
             loss = loss * weight_
             loss = loss.mean()
-            loss.backward();
+            loss.backward()
             optim.step()
             print("eps: ", eps, "data: ", i)
 def save(path):
@@ -64,7 +58,7 @@ def load(path):
 
 if __name__ == "__main__":
     train_loader = preprocess.getTrainLoader(config)
-    train(word2vecmodel, train_loader)
+    train(train_loader)
 
 
 
