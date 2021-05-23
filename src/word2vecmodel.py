@@ -7,9 +7,6 @@ class Encoder(nn.Module):
         self.inputdim = config['INPUT_DIM']
         self.hiddendim = config['ENC_HID_DIM']
         self.embeddim = config['EMB_DIM']
-        #        self.inputdim = inputdim
-        #        self.hiddendim = hiddendim
-        #        self.embeddim = embeddim
         self.hidden = nn.Linear(self.inputdim, self.hiddendim)
         self.embed = nn.Linear(self.hiddendim, self.embeddim)
 
@@ -44,11 +41,6 @@ class word2vec(nn.Module):
         self.decoder = decoder
 
     def forward(self, x):
-        #        with torch.no_grad:
-        #            center = x[0]
-        #            peripheral = x[1]
-        #            center = onehot(center)
-        #            peripheral = peripheral(center)
         center = x
         center = self.encoder(center)
         predict = self.decoder(center)

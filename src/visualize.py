@@ -3,7 +3,12 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import engine
 import preprocess
-config = engine.config
+import json
+
+config = ''
+with open('config.json', 'r') as f:
+    config = json.load(f)
+
 all = preprocess.getAllList()
 
 def sim(keyword1, keyword2):

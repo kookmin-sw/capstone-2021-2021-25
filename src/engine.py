@@ -5,7 +5,7 @@ import torch.nn as nn
 import datetime
 
 import json
-
+config = ''
 with open('config.json', 'r') as f:
     config = json.load(f)
 
@@ -28,7 +28,8 @@ def use_optimizer(model, params):
                                         lr=params['LEARNING_RATE'],
                                         momentum=params['MOMENTUM'])
     return opt
-def train(model, trainloader):
+def train(trainloader):
+    model = net
     epoch = config['EPOCH']
     criterion = nn.BCELoss()
     optim = use_optimizer(model, config)
@@ -46,7 +47,7 @@ def train(model, trainloader):
             loss = criterion(predict, label)
             loss = loss * weight_
             loss = loss.mean()
-            loss.backward();
+            loss.backward()
             optim.step()
             print("eps: ", eps, "data: ", i)
 def save(path):
@@ -57,7 +58,7 @@ def load(path):
 
 if __name__ == "__main__":
     train_loader = preprocess.getTrainLoader(config)
-    train(word2vecmodel, train_loader)
+    train(train_loader)
 
 
 

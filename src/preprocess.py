@@ -1,6 +1,12 @@
 import pandas as pd
 import torch
 import numpy as np
+import json
+
+config = ''
+with open('config.json', 'r') as f:
+    config = json.load(f)
+
 tag = pd.read_csv("data/tags.csv")
 job = pd.read_csv("data/job_tags.csv")
 user = pd.read_csv("data/user_tags.csv")
@@ -76,7 +82,7 @@ def getDataset():
     dataset = Word2VecDataSet(jobkeyword)
     return dataset
 
-def getTrainLoader(config, dataset=None):
+def getTrainLoader():
     dataset = Word2VecDataSet(jobkeyword)
     return torch.utils.data.DataLoader(dataset, batch_size=config['BATCH_SIZE'], shuffle=True), dataset
 
