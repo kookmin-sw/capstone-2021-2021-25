@@ -1,77 +1,64 @@
-[![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=349913&assignment_repo_type=GroupAssignmentRepo)
-# Welcome to GitHub
+# 인공지능 기반 커리어 매칭 시스템 (AI based career matching system)
 
-캡스톤 팀 생성을 축하합니다.
+**팀페이지 주소** -> https://kookmin-sw.github.io/capstone-2021-25
 
-## 팀소개 및 페이지를 꾸며주세요.
+## 산학 협력 기업: [그렙](https://www.grepp.co/)
 
-- 프로젝트 소개
-  - 프로젝트 설치방법 및 데모, 사용방법, 프리뷰등을 readme.md에 작성.
-  - Api나 사용방법등 내용이 많을경우 wiki에 꾸미고 링크 추가.
+Grepp, Inc.는 개발자들의 경쟁력 강화를 위한 교육, 교류, 문제 해결을 위한 모든 활동을 지원하며, 누구나 소프트웨어 개발에 참여할 수 있도록 도움을 주고 있습니다.
 
-- 팀페이지 꾸미기
-  - 프로젝트 소개 및 팀원 소개
-  - index.md 예시보고 수정.
+## 목차
 
-- GitHub Pages 리파지토리 Settings > Options > GitHub Pages 
-  - Source를 marster branch
-  - Theme Chooser에서 태마선택
-  - 수정후 팀페이지 확인하여 점검.
+  - [0. Abstract](#0-abstract)
+  - [1. 프로젝트 소개](#1-프로젝트-소개)
+  - [2. 소개 영상](#2-소개-영상)
+  - [3. 팀 소개](#3-팀-소개)
+  - [4. 사용법](#4-사용법)
+  - [5. 기타](#5-기타)
+  - [6. 개발](#6-개발)
+    - [협업 도구](#협업-도구)
+    - [개발 규칙](#개발-규칙)
+    - [커밋 규칙](#커밋-규칙)
 
-**팀페이지 주소** -> https://kookmin-sw.github.io/ '{{자신의 리파지토리 아이디}}'
+## 0. Abstract
 
-**예시)** 2020년 0조  https://kookmin-sw.github.io/capstone-2020-0/
+Based on the data Grepp has, we design an artificial intelligence system and develops prototypes that matches personal experience and skill sets with careers.
 
+## 1. 프로젝트 소개
 
-## 내용에 아래와 같은 내용들을 추가하세요.
+그렙에서 운영하는 플랫폼 [프로그래머스](https://programmers.co.kr/)에는 개발자와 기업을 위한 개발자 채용 구인 구직 서비스를 제공하고 있습니다. 그러나 채용 공고의 수가 많아 개발자가 자신에게 적합한 구인 공고를 찾아 지원을 하는데에는 많은 시간과 노력이 필요합니다. 그래서 프로그래머스에서는 개인의 희망 직군과 가지고 있는 기술 스택을 포함해 경력, 학력, 활동 등을 프로필에 기록하여 자신의 프로필과 연관성이 높은 순서로 채용 공고를 조회할 수 있는 기능과 기업을 매칭해주는 기능을 제공하고 있습니다. 우리는 이 시스템이 가진 단점을 보완하고 더 많은 정보들을 반영하는 인공지능 기반 커리어 매칭 시스템을 개발하는 것이 목표입니다.
 
-### 1. 프로잭트 소개
+## 2. 소개 영상
 
-프로젝트
+추후 추가 예정
 
-### 2. 소개 영상
+## 3. 팀 소개
 
-프로젝트 소개하는 영상을 추가하세요
+- 박정재
+  - 🆔: 20150359
+  - 📧: vcz1017@kookmin.ac.kr
+  - 📁: https://github.com/3ltigr0
+- 이호승
+  - 🆔: 20163149
+  - 📧: lhs971106@kookmin.ac.kr
+  - 📁: https://github.com/stigr
 
-### 3. 팀 소개
+## 4. 사용법
 
-팀을 소개하세요.
+추후 추가 예정
 
-팀원정보 및 담당이나 사진 및 SNS를 이용하여 소개하세요.
+## 5. 기타
 
-### 4. 사용법
+추후 추가 예정
 
-소스코드제출시 설치법이나 사용법을 작성하세요.
+## 6. 개발
 
-### 5. 기타
+### 협업 도구
 
-추가적인 내용은 자유롭게 작성하세요.
+- 팀 관리: Slack
+- 버전 관리: GitHub
+- 화상 회의: Google Meet
+- 문서 작성: Google Docs
 
+### 개발 규칙
 
-## Markdown을 사용하여 내용꾸미기
-
-Markdown은 작문을 스타일링하기위한 가볍고 사용하기 쉬운 구문입니다. 여기에는 다음을위한 규칙이 포함됩니다.
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-자세한 내용은 [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Support or Contact
-
-readme 파일 생성에 추가적인 도움이 필요하면 [도움말](https://help.github.com/articles/about-readmes/) 이나 [contact support](https://github.com/contact) 을 이용하세요.
+### 커밋 규칙
